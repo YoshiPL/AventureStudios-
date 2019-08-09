@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="translation.js" type='text/javascript'></script>
+  <script src="slider.js" type='text/javascript'></script>
+  <script src="teleport.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="style.css">
+  <title>AventureStudios - TEAM</title>
+</head>
+<body>
+  <!-- Loader -->
+
+  <div class="load">
+    <div class="block-image">
+      <img src="icons/white.png" class="img_load">
+    </div>
+  </div>
+
+  <!-- Translator -->
+
+  <div class="translate_wrapper">
+    <div class="current_lang">
+      <div class="lang">
+        <span class="lang-txt">PL</span> 
+        <span class="fa fa-chevron-down chevron"></span>
+      </div>
+    </div>
+    <div class="more_lang">
+      <div class="lang" data-value='en'>
+        <span class="lang-txt">EN</span>      
+      </div>
+      <div class="lang selected" data-value='pl'>
+        <span class="lang-txt">PL</span>      
+      </div>
+    </div> 
+  </div>
+
+  <!-- Navigation -->
+
+  <div id="myNav" class="overlay">
+    <span class="closebtn" onclick="closeNav()"><i class="glyphicon glyphicon-remove"></i></span>
+    <div class="overlay-content">
+      <ul id="navi">
+        <li><a href="#two" class="nav-home teleport" onclick="closeNav()"></a></li>
+        <li><a href="#six" class="nav-about teleport" onclick="closeNav()"></a></li>
+        <li><a href="#three" class="nav-members teleport" onclick="closeNav()"></a></li>
+        <li><a href="#four" class="nav-contact teleport" onclick="closeNav()"></a></li>
+      </ul>
+    </div>
+  </div>
+  <span class="nav_icon" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Background -->
+
+  <div class="center-info">
+    <img src="icons/white.png"/>
+    <p>Aventure Studios</p>
+    <h4></h4>
+  </div>
+  <div class="slide">
+    <div class="wallpaper">
+      <div class="tag"></div>
+      <img src="portfolio/sq1.png" class="slider-background"/>
+    </div>
+  </div>
+  <a class="arrow bounce teleport" href="#two"></a>
+  <div class="media_bg">
+    <ul>
+      <li>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="glyphicon glyphicon-globe"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- section 2 -->
+
+  <section id="two">
+    <div class="about anim">
+      <h5 class="nav-about-two anim"></h5>
+      <p class="about-us anim"></p>
+    </div>
+    
+  </section>
+
+  <!-- section 3 -->
+
+  <!--
+  <section id="five">
+      <div class="card_info">
+        <h5>Zajmujemy sie</h5>
+        <div class="cards">
+          <div class="card_one">
+            <i class="glyphicon glyphicon-ok"></i>
+            <h1>Projekty</h1>
+            <p>Lorem Ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+          </div>
+          <div class="card_two">
+              <i class="glyphicon glyphicon-ok"></i>
+            <h1>Konkursy</h1>
+            <p>Lorem Ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+          </div>
+          <div class="card_three">
+              <i class="glyphicon glyphicon-ok"></i>
+            <h1>Zlecenia</h1>
+            <p>Lorem Ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <section id="six">
+      <div class="images">
+        <div class="block-list">
+          <div class="list anim">
+            <img src="portfolio/sq1.png" class="list-image"/>
+            <a hover="#">The Old Town</a>
+          </div>
+        </div>
+        <div class="block-list">
+          <div class="list anim">
+            <img src="portfolio/sq2.png" class="list-image"/>
+            <a hover="#">Floating Whale Village</a>
+          </div>
+        </div>
+        <div class="block-list">
+          <div class="list">
+            <img src="portfolio/sq3.jpg" class="list-image"/>
+            <a hover="#">Winter Castle</a>
+          </div>
+        </div>
+        <div class="block-list">
+          <div class="list anim">
+            <img src="portfolio/sq4.png" class="list-image"/>
+            <a hover="#">Lorem Ipsum</a>
+          </div>
+        </div>
+        <div class="block-list">
+          <div class="list anim">
+            <img src="portfolio/sq5.jfif" class="list-image"/>
+            <a hover="#">Castle Labrov</a>
+          </div>
+        </div>
+        <div class="block-list">
+          <div class="list anim">
+            <img src="portfolio/sq6.jpg" class="list-image"/>
+            <a hover="#">Secret Fantasy Garden</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Section 3 -->
+
+  <section id="three" class="teleport">
+    <h5 class="team-name"></h5>
+    <div class="page-wrapper anim">
+      <div class="post-slider">
+        <i class="glyphicon glyphicon-chevron-left prev"></i>
+        <i class="glyphicon glyphicon-chevron-right next"></i>
+        <div class="post-wrapper anim">
+          <div class="post">
+            <div class="image">       
+              <img src="icons/kielczi.png" class="slider-image"/>
+              <div class="info">
+                <h1>Kielczi</h1>
+                <h3 class="rank_owner"></h3>
+                  <p>Founder / Programist</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="fa fa-facebook"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">       
+              <img src="icons/colivar.png" class="slider-image"/>
+              <div class="info">
+                <h1>Colivar</h1>
+                <h3 class="rank_owner"></h3>
+                <p>Organic / Programist</p>
+                <div class="media">
+                  <!-- Brak -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">       
+              <img src="icons/white.png" class="slider-image"/>
+              <div class="info">
+                <h1>ZelaznyPL</h1>
+                <h3 class="rank_media"></h3>
+                <p>Youtuber / Streamer</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="fa fa-youtube-play"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">       
+              <img src="icons/white.png" class="slider-image"/>
+              <div class="info">
+                <h1>Itesim</h1>
+                <h3 class="rank_media"></h3>
+                <p>Youtuber / Streamer</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="fa fa-youtube-play"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/askon.png" class="slider-image"/>
+              <div class="info">
+                <h1>Askonn</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Vehicle / Urban Structure</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="glyphicon glyphicon-globe"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">         
+              <img src="icons/aviniu.png" class="slider-image"/>
+              <div class="info">
+                <h1>_AVINIU_</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Organic / Custom Terrain</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="fa fa-twitter"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/blacking.png" class="slider-image"/>
+              <div class="info">
+                <h1>BlacKing89</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Organic / Structure</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="glyphicon glyphicon-globe"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/blacku.png" class="slider-image"/>
+              <div class="info">
+                <h1>Blackuuu</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Structure</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="glyphicon glyphicon-globe"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/borow.png" class="slider-image"/>
+              <div class="info">
+                <h1>BorowPL</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Organic / Structure</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="glyphicon glyphicon-globe"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/lordzio.png" class="slider-image"/>
+              <div class="info">
+                <h1>Lordzio</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Custom Terrain</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" class="media-link"><i class="glyphicon glyphicon-globe"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/matigra.png" class="slider-image"/>
+              <div class="info">
+                <h1>MatiGra54</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Ship / Structure</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="glyphicon glyphicon-globe"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/tractor.png" class="slider-image"/>
+              <div class="info">
+                <h1>MrTractor</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Structure / Vehicle</p>
+                <div class="media">
+                  <!-- Brak -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/qbikson.png" class="slider-image"/>
+              <div class="info">
+                <h1>Qbikson</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Structure / Terrain</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/rajdi.png" class="slider-image"/>
+              <div class="info">
+                <h1>Rajdi</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Structure / Vehicle</p>
+                <div class="media">
+                  <!-- Brak -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/tobkub.png" class="slider-image"/>
+              <div class="info">
+                <h1>Tobkub7</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Structure</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="glyphicon glyphicon-globe"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/tostex.png" class="slider-image"/>
+              <div class="info">
+                <h1>Tosteex</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Structure / Sci-fi</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" class="media-link"><i class="glyphicon glyphicon-globe"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/twizer.png" class="slider-image"/>
+              <div class="info">
+                <h1>Twizer</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Structure / Custom Terrain</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="fa fa-twitter"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/Verpi.png" class="slider-image"/>
+              <div class="info">
+                <h1>Verpi</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Ship / Airship</p>
+                <div class="media">
+                  <!-- Brak -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/Zebra.png" class="slider-image"/>
+              <div class="info">
+                <h1>xZebraRex</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Organic</p>
+                <div class="media">
+                  <ul>
+                    <li>
+                      <a href="#" class="media-link"><i class="glyphicon glyphicon-globe"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="icons/yoshi.png" class="slider-image"/>
+              <div class="info">
+                <h1>YoshiPL</h1>
+                <h3 class="rank_builder"></h3>
+                <p>Everything + Programist</p>
+                <div class="media">
+                  <!-- Brak -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+
+  <section id="four">
+    <div class="block">
+      <div class="contact-bar">
+          <ul class="list-inline text-center">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-globe"></i></a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <h1>© AventureStudio 2019 - All rights reserved.</h1>
+  </section>
+
+  <!--Script-->
+
+  <script type="text/javascript">
+
+    $(window).on("load", function() {
+     $(".load").fadeOut("slow");
+    });
+
+
+      TweenMax.from(".center-info img", 2, {
+            delay: 0.1,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".center-info p", 2, {
+            delay: 0.2,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".center-info h4", 2, {
+            delay: 0.3,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".arrow", 2, {
+            delay: 1.3,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".header", 2, {
+            delay: 0.7,
+            opacity: 0,
+            x: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".translate_wrapper", 2, {
+            delay: 0.7,
+            opacity: 0,
+            x: -40,
+            ease: Expo.easeInOut
+      })
+      
+      TweenMax.from(".nav_icon", 2, {
+            delay: 0.7,
+            opacity: 0,
+            x: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom(".media_bg ul li", 1, {
+            delay: 1, 
+            opacity: 0, 
+            y: -20, 
+            ease: Expo.easeInOut
+      }, 0.2)
+
+
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        document.getElementById("navi").style.opacity = "1";
+        document.getElementById("navi").style.transition= "0.2s";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        document.getElementById("navi").style.opacity = "0";
+        document.getElementById("navi").style.transition= "0.2s";
+      }
+
+    window.sr = ScrollReveal();
+    sr.reveal('.anim');
+
+    $(".zoomWrapper img").click(function(){
+      $(this).toggleClass("flasher");
+    });
+
+
+    var link1 = document.getElementById("media-link");
+if (typeof window.addEventListener != "undefined") {
+    link1.addEventListener("click",handleclick,false);
+} else {
+    link1.attachEvent("onclick",handleclick);
+}
+
+  </script>
+</body>
+</html>
